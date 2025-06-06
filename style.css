@@ -203,7 +203,7 @@ body{
   padding: 8px 12px;
 }
 
-.welcome p{
+.welcome .head{
   font-size: 2.5rem;
   display: flex;
   text-transform:uppercase; 
@@ -217,7 +217,11 @@ body{
 .welcome .about p{
   font-size: 1.1rem;
   text-align: justify;
+  /* text-transform:capitalize; */
+  /* font-family:'Courier New', Courier, monospace; */
 }
+
+
 .virtual-logo img{
   height: 150px;
   width: 150px;
@@ -230,38 +234,6 @@ body{
 .welcome-about{
   display: flex;
   justify-content: space-between;
-}
-.partner{
-    min-height: 70vh;
-    width: 100vw;
-    text-decoration: none;
-    color: white;
-    background-color:rgb(215, 93, 255);
-    text-transform: uppercase;
-    font-size: 2rem;
-    padding: 8px 12px;
-    
-}
-.p-left{
-    background-color: transparent;
-    width: 35%;
-    display: flex;
-   
-}
-.p-right{
-    
-    background: linear-gradient(-90deg,rgb(5, 0, 162),rgb(69, 0, 92) 70%);
-    width: 65%;    
-}
-.info{
-    min-height: auto;
-    width: 100vw;
-    text-decoration: none;
-    color: white;
-    background-color: rgb(199, 32, 255);
-    text-transform: uppercase;
-    font-size: 2rem;
-    padding: 8px 12px;
 }
 .main{
   width: 100vw;
@@ -292,18 +264,58 @@ body{
   border-radius: 50%;
   margin-left: 20px;
 }
+
 .field div img{
-  position: relative;
+  /* position: relative; */
   width: 300px;
   height: 300px;
   border-radius: 50%;
 }
 .field div img:hover{
-  /* position: relative; */
-
-  bottom: 50px;
+  position: relative;
+  /* bottom: 50px; */
+  transition-duration: 1s;
+  /* transition-delay: 1s; */
+  transform: scale(1.1);
 }
 
+
+.partner{
+  display: flex;
+  justify-content: center;
+  height: 250px;
+    
+}
+.why {
+  text-align: center;
+  background-color: blue;
+}
+.info{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aqua;
+}
+
+.info div{
+  
+  background-color: black;
+  color: white;
+  display: inline-block;
+  height: 500px;
+  width: 300px;
+  border-radius: 2rem;
+  margin: 2rem;
+}
+
+.card1 i{
+  margin:c;
+  font-size: 35px;
+}
+.info img{
+  border-radius: 2rem;
+  width: 300px;
+  height: 500px;
+}
 
 @keyframes typing {
   from { width: 0 }
