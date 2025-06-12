@@ -24,7 +24,7 @@ const imgElements = slider.querySelectorAll('img');
 
 function updateClasses() {
   imgElements.forEach((img, i) => {
-    img.className = ''; // reset class
+    img.className = '';
 
     if (i === currentIndex) {
       img.classList.add('center');
@@ -37,7 +37,6 @@ function updateClasses() {
     } else if (i === (currentIndex + 2) % images.length) {
       img.classList.add('hidden-right');
     } else {
-      // Hide completely offscreen ones (optional)
       img.classList.add('hidden-right');
     }
   });
@@ -57,10 +56,9 @@ function prevImage() {
 document.getElementById('next').addEventListener('click', nextImage);
 document.getElementById('prev').addEventListener('click', prevImage);
 
-// Auto slide
+
 setInterval(nextImage, 3000);
 
-// Initial render
 updateClasses();
 
 
