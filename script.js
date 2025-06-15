@@ -62,5 +62,17 @@ setInterval(nextImage, 3000);
 updateClasses();
 
 
+///-------flip wala code-------------////\
 
+const columns = document.querySelectorAll(".campus-column");
+
+    columns.forEach(column => {
+      column.addEventListener("click", () => {
+        column.classList.add("flipped");
+      });
+
+      column.addEventListener("mouseleave", () => {
+        column.classList.remove("flipped");
+      });
+    });
 
