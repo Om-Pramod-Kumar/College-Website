@@ -62,7 +62,7 @@ setInterval(nextImage, 3000);
 updateClasses();
 
 
-///-------flip wala code-------------////\
+///-------flip  code-------------////\
 
 const columns = document.querySelectorAll(".campus-column");
 
@@ -76,3 +76,27 @@ const columns = document.querySelectorAll(".campus-column");
       });
     });
 
+//// why lnct k slider images--------////
+let index = 0;
+const track = document.querySelector('.gallery-track-new');
+const slides = document.querySelectorAll('.gallery-slide-new');
+const totalGroups = Math.ceil(slides.length / 3);
+
+function updateSlider() {
+  track.style.transform = `translateX(-${index * 100}%)`;
+}
+
+document.querySelector('.nav.left').addEventListener('click', () => {
+  index = (index - 1 + totalGroups) % totalGroups;
+  updateSlider();
+});
+
+document.querySelector('.nav.right').addEventListener('click', () => {
+  index = (index + 1) % totalGroups;
+  updateSlider();
+});
+
+setInterval(() => {
+  index = (index + 1) % totalGroups;
+  updateSlider();
+}, 4000);
