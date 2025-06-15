@@ -87,11 +87,15 @@ Select branch: main, folder: /root
 
 Save and wait for deployment
 
-👥 Contributors
-Name	Email
-Nitish Kumar	nitishkumar7791@gmail.com
-Prashant Kumar Dwivedi	prashantdwivedi.0219@gmail.com
-Om Pramod Kumar	omk152004@gmail.com
+## 👥 Contributors
+
+| Name                   | Email                            |
+|------------------------|----------------------------------|
+| Nitish Kumar           | nitishkumar7791@gmail.com        |
+| Prashant Kumar Dwivedi | prashantdwivedi.0219@gmail.com   |
+| Om Pramod Kumar        | omk152004@gmail.com              |
+
+
 
 📈 Future Enhancements
 ✍️ Admin dashboard for content updates
@@ -104,9 +108,11 @@ Om Pramod Kumar	omk152004@gmail.com
 
 🗂️ Database-connected dynamic content
 
+
 📃 License
 This project is intended for educational purposes only.
 All images, content, and code are developed as part of an academic showcase.
+
 
 🙌 Acknowledgements
 Inspired by LNCT Group's official content and branding
